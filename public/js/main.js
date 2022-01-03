@@ -1,11 +1,38 @@
 const sidebar = document.querySelector(".sidebar");
 const mobileToggle = document.querySelector("#mobile-toggle")
 const sidebarClose = document.querySelector("#sidebar-close")
+// const inputButton = document.getElementById("inpFile");
+// console.log(inputButton);
+// const previewContainer = document.getElementById("imagePreview")
+// //const previewContainer = document.querySelector("#imagePreview")
+// console.log(previewContainer)
+// const previewImage = previewContainer.querySelector(".preview__image")
+// console.log(previewImage);
+// const previewDefaultText = previewContainer.querySelector(".default-text");
+// console.log(previewDefaultText)
+
+// //const previewContainer = document.getElementById("imagePreview")
+// //const previewImage  = previewContainer.querySelector(".preview__image")
+
 // const navlink = document.querySelectorAll(".sidebar-menu > li > a")
 // const navlinks = document.getElementsByClassName('link')
-const navLinks = document.querySelectorAll('link')
 
+// inputButton.addEventListener("change", ()=> {
+//     const file = inputButton.files[0]
 
+//     if(file){
+//         const reader = new FileReader();
+
+//         previewDefaultText.style.display = "none";
+//         previewImage.style.display = "block"
+
+//         reader.addEventListener("load", () => {
+//             previewImage.setAttribute("src", reader.result)
+//         });
+
+//         reader.readAsDataURL(file);
+//     }
+// })
 mobileToggle.addEventListener("click", ()=>{
 
     sidebar.classList.toggle('active');

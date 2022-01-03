@@ -25,7 +25,8 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
     Route::match(['get','post'],'/',[AdminController::class,'login']);
     Route::group(['middleware'=>['admin']], function(){
         Route::get('dashboard',[AdminController::class,'dashboard']);
-        Route::get('getAll', [AdminController::class,'getAll'])->name('admin.all');
+        Route::get('create', [AdminController::class, 'create'])->name('Admin.create');
+        // Route::get('getAll', [AdminController::class,'getAll'])->name('admin.all');
         
         Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');
         

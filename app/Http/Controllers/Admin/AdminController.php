@@ -32,6 +32,9 @@ class AdminController extends Controller
     public function dashboard(){
          return view('Admin.dashboard');
     }
+    public function create(){
+        return view ('Admin.create');
+    }
     public function logout(){
         Auth::guard('admin')->logout();
 

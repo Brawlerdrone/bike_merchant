@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="{{route('Admin.create')}}">
                            Create new
                         </a>
                     </li>
@@ -90,6 +90,10 @@
                 dashboard
             </div>
         </div>
+        <div class="main-content">
+            @yield('content')
+        </div>
+
     </div>
     <script src="{{asset('js/main.js')}}"></script>
 </body>
